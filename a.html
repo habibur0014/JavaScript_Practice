@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Demo JavaScript in Head-->
+    <script>
+        function myFunction() {
+          document.getElementById("demo7").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2>What can JavaScript Do?</h2>
+
+
+    <p id="demo"> JavaScript can change HTML content.</p>
+
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me to get Answer!</button>
+
+
+    <button onclick="document.getElementById('myImage').src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lighting.philips.com.ph%2Fconsumer%2Fp%2Fled-bulb%2F8718696823767&psig=AOvVaw3Y0hN74pfNtfTu4gMEBvXE&ust=1679635874731000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMDD_K2p8f0CFQAAAAAdAAAAABAE'" >Turn on the Light </button>
+
+
+    <img id="myImage" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lighting.philips.com.ph%2Fconsumer%2Fp%2Fled-bulb%2F8718696823767&psig=AOvVaw3Y0hN74pfNtfTu4gMEBvXE&ust=1679635874731000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCMDD_K2p8f0CFQAAAAAdAAAAABAE" style="width:100px" alt="">
+
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'" >Turn off the Light </button>
+
+
+    <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Change the Font Size!</button>
+
+    
+    <button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me to hide!</button>
+
+
+    <p id="demo3" style="display:none">Hello JavaScript!</p>
+
+    <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me to show!</button>
+
+
+
+    <h2>JavaScript in Body</h2>
+
+    <p id="first"></p>
+
+    <script>
+    document.getElementById("first").innerHTML = "My First JavaScript";
+    </script>
+
+
+    <!--Paragraph Changed-->
+    <p id="demo7">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it</button>
+
+
+    <!--External JavaScript-->
+    <h2>Demo External JavaScript</h2>
+
+    <p id="demo9">A Paragraph.</p>
+
+    <button type="button" onclick="myFunction()">Try it to chnage</button>
+
+
+    <script src="JavaScript.js"></script>
+
+
+</body>
+</html>
